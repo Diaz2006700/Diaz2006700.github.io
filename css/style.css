@@ -140,6 +140,12 @@ footer {
     height: 400px;
 }
 
+.acercade video{
+    margin-left: 180px;
+    width: 550px;
+    height: 400px;
+}
+
 #teatroimg {
     width: 100%;
 }
@@ -258,20 +264,23 @@ footer {
             height: 400px;
         }
 
-        @media (max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
+@media (max-width: 768px) {
+.contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
 
-            #contact-form,
-            .map-container {
-                width: 100%;
-            }
-        }
-        /* Normalización para que todo mida bien */
-* {
+    #contact-form,
+    .map-container {
+            width: 100%;
+    }
+}
+
+/* Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+
+    * {
     box-sizing: border-box;
 }
 
@@ -279,9 +288,6 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
-
-/* Tablets (hasta 1024px) */
-@media (max-width: 1024px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -293,6 +299,12 @@ html, body {
     }
 
     .acercade img {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    .acercade video{
         width: 100%;
         margin-left: 0;
         height: auto;
@@ -341,6 +353,16 @@ html, body {
 
 /* Teléfonos (hasta 600px) */
 @media (max-width: 600px) {
+    
+    * {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -375,6 +397,12 @@ html, body {
     .acercade {
         font-size: 16px;
         padding: 10px;
+    }
+
+     .acercade video{
+        width: 100%;
+        margin-left: 0;
+        height: auto;
     }
 
     .programador {
